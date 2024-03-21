@@ -1,4 +1,4 @@
-import { IS_ROLES_KEY } from '@common/api-gateway/decorator/roles.decorator';
+import { IS_ROLES_KEY } from '@api/src/common/decorator/roles.decorator';
 import { RoleEnum } from '@common/enum/role.enum';
 import { BadRequestException, CanActivate, ExecutionContext, Injectable, UnauthorizedException } from '@nestjs/common';
 import { Reflector } from '@nestjs/core';

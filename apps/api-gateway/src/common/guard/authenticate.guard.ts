@@ -1,4 +1,4 @@
-import { IS_PUBLIC_KEY } from '@common/api-gateway/decorator/public.decorator';
+import { IS_PUBLIC_KEY } from '@api/src/common/decorator/public.decorator';
 import { envEnum } from '@common/enum/env.enum';
 import  {JwtService} from '@lib/jwt/jwt.service';
 import { CanActivate, ExecutionContext, Injectable, UnauthorizedException } from '@nestjs/common';

@@ -12,8 +12,8 @@ import { MongooseModule as _MongooseModule } from "@nestjs/mongoose";
             inject: [ConfigService],
             useFactory: async (env:ConfigService) => {
                 return {
-                    uri: env.get<string>(envEnum.DB_URI),   
-                    dbName: env.get<string>(envEnum.DB_NAME),
+                    uri: env.get<string>(envEnum.DB_TEMPLATE_URI),   
+                    dbName: env.get<string>(envEnum.DB_TEMPLATE_NAME),
                 }
             }
         }),

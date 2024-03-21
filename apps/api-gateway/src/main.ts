@@ -1,7 +1,7 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
-import { AuthorizeGuard } from '@common/api-gateway/guard/authorize.guard';
-import { AuthenticateGuard } from '@common/api-gateway/guard/authenticate.guard';
+import { AuthorizeGuard } from '@api/src/common/guard/authorize.guard';
+import { AuthenticateGuard } from '@api/src/common/guard/authenticate.guard';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { I18nMiddleware, I18nValidationExceptionFilter, I18nValidationPipe } from "nestjs-i18n"
 import { ConfigService } from '@nestjs/config';

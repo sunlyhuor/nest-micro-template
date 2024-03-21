@@ -3,34 +3,12 @@ import { ArrayNotEmpty, IsArray, IsNotEmpty, IsNumber, IsNumberString, IsOptiona
 import { Types } from 'mongoose';
 
 export class ConfigDto {
-  @IsNotEmpty()
-  NODE_ENV!: string;
 
   @IsNotEmpty()
-  ACCESS_TOKEN_SECRET!: string;
+  DB_TEMPLATE_URI!:string
 
   @IsNotEmpty()
-  REFRESH_TOKEN_SECRET!: string;
-
-  @IsNotEmpty({message: "ACCESS_TOKEN_EXPIRE value like 1s, 1m, 1h, 1d"})
-  ACCESS_TOKEN_EXPIRE!: string;
-
-  @IsNotEmpty({message: "REFRESH_TOKEN_EXPIRE value like 1s, 1m, 1h, 1d"})
-  REFRESH_TOKEN_EXPIRE!: string;
-
-  @IsNotEmpty()
-  DB_URI!:string
-
-  @IsNotEmpty()
-  DB_NAME!:string
-
-  @IsNumberString()
-  @IsNotEmpty()
-  CACHE_TTL!:number  
-
-  @IsNumberString()
-  @IsNotEmpty()
-  CACHE_MAX!:number
+  DB_TEMPLATE_NAME!:string
 
   @IsNotEmpty()
   MAIL_HOST!:string
@@ -61,9 +39,9 @@ export class ConfigDto {
   RABBITMQ_URL!:string[]
 
   @IsNotEmpty()
-  RABBITMQ_AUTH_QUEUE!:string
+  RABBITMQ_TEMPLATE_QUEUE!:string
 
   @IsNotEmpty()
-  RABBITMQ_AUTH_NAME!:string
+  RABBITMQ_TEMPLATE_NAME!:string
 
 }

@@ -6,7 +6,7 @@ import { JwtModule } from '@lib/jwt/jwt.module';
 import { AuthenticateGuard } from '@service/common/guard/authenticate.guard';
 import { MongooseModule } from '@template/src/libs/mongoose/mongoose.module';
 import { _EventModule } from '@template/src/event/event.module';
-import { ConfigModule } from '@lib/config/config.module';
+import { ConfigModule } from '@template/src/libs/config/config.module';
 
 @Module({
   imports: [

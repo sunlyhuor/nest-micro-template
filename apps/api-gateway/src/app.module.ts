@@ -4,7 +4,7 @@ import { join } from 'path';
 import { ApiModule } from '@api/src/api/api.module';
 import { AuthorizeGuard } from './common/guard/authorize.guard';
 import { JwtModule } from '@lib/jwt/jwt.module';
-import { AuthenticateGuard } from '@common/api-gateway/guard/authenticate.guard';
+import { AuthenticateGuard } from '@api/src/common/guard/authenticate.guard';
 import { EventModule } from '@lib/event/event.module';
 import { I18nModule } from '@lib/i18n/i18n.module';
 import { MailerModule } from '@lib/mailer/mailer.module';

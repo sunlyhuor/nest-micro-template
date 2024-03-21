@@ -2,7 +2,7 @@ import { envEnum } from "@common/enum/env.enum";
 import { Global, Logger, Module } from "@nestjs/common";
 import { ConfigModule, ConfigService } from "@nestjs/config";
 import { MongooseModule as _MongooseModule } from "@nestjs/mongoose";
-import * as schemas from "@auth-service/src/common/schemas"
+import * as schemas from "@api/src/common/schemas"
 
 @Global()
 @Module({

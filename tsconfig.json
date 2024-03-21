@@ -22,9 +22,9 @@
       "@api/*": [
         "apps/api-gateway/*"
       ],
-      "@common/api-gateway/*": [
-        "apps/api-gateway/src/common/*",
-      ],
+      // "@common/api-gateway/*": [
+      //   "apps/api-gateway/src/common/*",
+      // ],
       // Template
       "@template/*": [
         "apps/template/*"
